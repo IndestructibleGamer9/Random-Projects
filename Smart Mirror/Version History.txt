@@ -1,0 +1,37 @@
+Version History
+
+Version 1.0 - Initial Release
+Display Application: Created a dynamic display application using Tkinter.
+Window Configuration: Initialized the Tkinter window with specified geometry and black background.
+Weather Data: Integrated functionality to fetch and display current weather data, including temperature, humidity, and weather icon, using the Get_weather function.
+Date and Time: Added real-time date and time display using the ddt function.
+Stock Information: Implemented stock price retrieval and display for Tesla, Solana, and Bitcoin using the get_price_info function.
+UI Construction: Built the user interface with labels for weather, date, time, and stock information.
+Periodic Updates: Added methods for updating weather, date/time, and stock data periodically.
+Formatted Numbers: Included a number formatting method to display large numbers in a readable format.
+Icon Mapping: Mapped weather condition codes to corresponding icons.
+Full Screen and Exit: Enabled fullscreen mode with the ability to exit using the Escape key.
+
+
+
+Version 2.0 - New Features and Enhancements
+Database Integration: Implemented DataControl class for MySQL database operations, including create, read, update, and delete (CRUD) functionalities for reminders.
+Reminder Functionality: Added functionality to fetch, filter, and display reminders from the database.
+Setup Reminders: Fetch and filter reminders to display the next three upcoming reminders.
+Reminder Display: Added labels to display reminders on the UI.
+Threaded Initialization: Improved startup performance by using threads for fetching weather, date/time, and stock data concurrently.
+Image Handling: Enhanced weather icon display using PIL for image handling and resizing.
+Refactored UI Update: Refactored periodic updates for weather, date/time, and stock information to ensure smooth and timely updates.
+Error Handling: Added basic error handling for unknown day and weather icon cases.
+Performance Improvements: Optimized various methods for better performance and reliability.
+
+Version 2.1 - Reminder System Enhancements and Bug Fixes
+Reminder Update System: Implemented a new reminder update system to periodically check and refresh displayed reminders.
+Reminder Filtering: Enhanced the reminder filtering process to accurately select and display the next three upcoming reminders.
+Date Formatting: Improved date formatting for reminders, including the addition of ordinal suffixes (e.g., "1st", "2nd", "3rd") for better readability.
+Time Display: Added time display to reminders, showing either "Today at [time]" or "[Day] the [Date] at [time]" format.
+Database Cleanup: Implemented automatic deletion of passed reminders from the database.
+Stock Data change: swaped from solana and bitcoin to apple and microsoft becaues of api limitations.
+Performance Optimization: Further optimized the reminder update process for better performance.
+Bug Fixes: Addressed various minor bugs and improved overall system stability.
+Code Refactoring: Refactored parts of the code for better readability and maintainability.
